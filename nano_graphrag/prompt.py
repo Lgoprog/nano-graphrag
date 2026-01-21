@@ -1,5 +1,9 @@
-PROMPTS = {
-    "entity_extraction": "Given an input sentence, provide a detailed explanation of the entities present, including their types and relationships to each other. Perform this task with one-shot learning in mind by understanding the context and ontology of the entities involved. For example, in 'Apple is a technology company based in Cupertino, California.', identify and classify 'Apple' as an organization, 'Cupertino' as a location, and 'California' as a region while explaining their interrelationships.",
+"""
+Enhanced Prompt for Ontology-aware Entity Extraction:
+- Given a text, identify and extract entities based on the provided ontology terms. Example: "Extract entities from the following text and categorize them according to the defined ontology:
+<text>"
 
-    "relationship_extraction": "Analyze the provided text and identify the relationships between the entities present. For example, in 'Elon Musk founded SpaceX in 2002.', you should extract the relationship 'founded' linking the entities 'Elon Musk' and 'SpaceX', indicating that Musk has a founding relationship with SpaceX in the year stated. Provide relevant details such as timestamps or other context when available."
-}
+Enhanced Prompt for Ontology-aware Relationship Extraction:
+- Extract relationships between identified entities by analyzing the context in which they appear. Example: "Given the extracted entities, analyze the relationships between them and specify the type of relationship:
+<entities>"
+"""
